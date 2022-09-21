@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<!--
+
+UAT Space Page- CSC 101 at UAT.edu
+by Payton Jankowics
+paytonjanko@gmail.com
+
+
+
+Assignment: Launching a UAT Space program.
+
+
+-->
+
+
+<HTML>
+
+<head>
+    <link rel="stylesheet" href="myCss.CSS">
+    <title>
+        Payton Jankowics
+    </title>
+    <script src="code.js"></script>
+</head>
+
+<body>
+<script>var alertText = "Test of alert func";
+var docWriteText = "test of document. write func";
+var welcomeText = "Welcome to UAT Space";
+
+</script>
+    
+
+
+    <script type="text/javascript">
+        var blink = document.getElementById('blink');
+        setInterval(function() {
+          blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
+        }, 1500);
+      </script>
+    <!--
+
+UAT space logo, downloaded from https://synchronic.uat.edu/courses/5195/assignments/187442?module_item_id=494357
+
+
+-->
+
+
+
+    <img src="UATspaceLogo-1.jpg">
+
+
+    <h1 id="blink">
+         UAT Space Page 
+
+    </h1>
+
+    <p>
+        This is a paragraph test.
+
+
+    </p>
+
+
+    <script>
+      //  alert(alertText + welcomeText);
+        document.write(alertText + docWriteText + ' ' + welcomeText);
+
+    </script>
+    <br>
+    <br>
+    <br>
+    <h2>CountDown Timer</h2>
+    
+ <div id="CountDis"> display text here after start button pressed</div>
+
+
+
+
+    <br>
+    <br>
+    <button element onclick="CountDownTimer();">
+
+        Start
+
+    </button>
+
+    <button>
+
+        Stop
+
+    </button>
+
+
+
+</body>
+
+</HTML>
