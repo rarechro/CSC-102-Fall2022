@@ -2,92 +2,95 @@
 
 
 async function countdown50() {
-  var count = 50;
+  
 
 
-  setTimeout(function(){count = count- 5 
-    document.getElementById("CountDis").innerHTML = count;
+
+// below is a way more efficient way of doing this.
+
+
   
-  }, 5000);
-  setTimeout(function(){count = count- 5 
-    document.getElementById("CountDis").innerHTML = count;
-  
-  }, 10000);
-  setTimeout(function(){count = count- 5 
-    document.getElementById("CountDis").innerHTML = count;
-  
-  }, 15000);
-  setTimeout(function(){count = count- 5 
-    document.getElementById("CountDis").innerHTML = count;
-  
-  }, 20000);
-  setTimeout(function(){count = count- 5 
-    document.getElementById("CountDis").innerHTML = count;
-  
-  }, 25000);
-  setTimeout(function(){count = count- 5 
-    document.getElementById("CountDis").innerHTML = count;
-  
-  }, 30000);
-  setTimeout(function(){count = count- 5 
-    document.getElementById("CountDis").innerHTML = count;
-  
-  }, 35000);
-  setTimeout(function(){count = count- 5 
-    document.getElementById("CountDis").innerHTML = count;
-  
-  }, 40000);
-  setTimeout(function(){count = count- 5 
-    document.getElementById("CountDis").innerHTML = count;
-  
-  }, 45000);
-  setTimeout(function(){count = count- 5 
-    document.getElementById("CountDis").innerHTML = count;
-  
-  }, 50000);
-  
-  
-  setTimeout(function(){
-    document.getElementById("CountDis").innerHTML = 'BlastOff';
-  
-  }, 50000);
-  
-  
-  
-  
-  
-  
-  
-  
-  /*
-    console.log('start timer');
-    var count = 50;
-    for (let step = 0; step < 10; step++) {
-      await new Promise(resolve => setTimeout(resolve, 1000));
+    console.log('start timer'); //lets me know the timer started
+    var count = 50; // sets a int var to 50
+    for (let step = 0; step < 10; step++) { // loop 0 through 10
+      document.getElementById("CountDis").innerHTML = count; // display new count var value
+      await new Promise(resolve => setTimeout(resolve, 5000)); // wait 5 seconds
       
-      count = count- 5;
-      document.getElementById("CountDis").innerHTML = count;
-      if (count == 0){
-        document.getElementById("CountDis").innerHTML = 'Blast Off';
-        document.alert("BlastOff");
+      count = count- 5; // subtract 5 from count var
+       // display new count var value
+      if (count == 0){ // if count is zero do this
+        document.getElementById("CountDis").innerHTML = 'Blast Off'; // set timer to blastoff
+        document.alert("BlastOff"); // blastoff
 
 
       }
     }
     //await new Promise(resolve => setTimeout(resolve, 1000));
-   */
-    
-  }
+   
+
+}
 
 
 
-function CountDownTimer(){
-// count down timer 50 to 0 by 5
-console.log("countdown started");
-//var count = 50;
-countdown50();
-//count - 1;
-//document.getElementById("CountDis").innerHTML = count;
+function CountDownTimer() {
+  // count down timer 50 to 0 by 5
+  console.log("countdown started");
+  //var count = 50;
+  countdown50();
+  //count - 1;
+  //document.getElementById("CountDis").innerHTML = count;
+
+
+}
+
+
+function playCraps(){
+
+console.log("play?");
+// gets random number 1-6
+die1 = Math.ceil(Math.random()*6);
+die2 = Math.ceil(Math.random()*6);
+console.log('die1', die1, 'die2', die2);
+//sets both player values to random number to be displayed
+document.getElementById("dieres1").innerHTML = die1;
+document.getElementById("dieres2").innerHTML = die2;
+
+
+//check if craps 7 or 11
+var sum = die1 + die2;
+
+if (sum == 7 || sum == 11){
+//check for lost
+console.log("lose");
+document.getElementById("gameresult").innerHTML = 'Lose :(';
+
+}
+
+else if (die1 % 2 == 0 && die1 == die2){
+// check for win
+console.log("win")
+document.getElementById("gameresult").innerHTML = 'You Win!';
+}
+
+else{
+// if neither win or lose tie
+console.log("Tie")
+document.getElementById("gameresult").innerHTML = 'Tie! so close 0-0';
+}
+
+
+
+//check for win
+
+
+//check for tie
+
+
+
+
+
+
+
 
 
 }
