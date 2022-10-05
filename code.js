@@ -30,7 +30,7 @@ async function countdown50() {
 
       else if (count <= 25){//if the count is at 25
 
-        var newMessage = "Warning Less than ½ way to launch, "+ count + " time left";// sets new var to the message and the count var
+        var newMessage = "Warning Less than ½ way to launch, time left = "+ count;// sets new var to the message and the count var
         document.getElementById("newMessage").innerText = newMessage;//writes variable to web page
 
       }
