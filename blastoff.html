@@ -25,20 +25,20 @@ Assignment: Launching a UAT Space program.
 </head>
 
 <body>
-<script>var alertText = "Test of alert func";
-var docWriteText = "test of document. write func";
-var welcomeText = "Welcome to UAT Space";
+    <script>var alertText = "Test of alert func";
+        var docWriteText = "test of document. write func";
+        var welcomeText = "Welcome to UAT Space";
 
-</script>
-    
+    </script>
+
 
 
     <script type="text/javascript">
         var blink = document.getElementById('blink');
-        setInterval(function() {
-          blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
+        setInterval(function () {
+            blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
         }, 1500);
-      </script>
+    </script>
     <!--
 
 UAT space logo, downloaded from https://synchronic.uat.edu/courses/5195/assignments/187442?module_item_id=494357
@@ -52,7 +52,7 @@ UAT space logo, downloaded from https://synchronic.uat.edu/courses/5195/assignme
 
 
     <h1 id="blink">
-         UAT Space Page 
+        UAT Space Page
 
     </h1>
 
@@ -64,7 +64,7 @@ UAT space logo, downloaded from https://synchronic.uat.edu/courses/5195/assignme
 
 
     <script>
-      //  alert(alertText + welcomeText);
+        //  alert(alertText + welcomeText);
         document.write(alertText + docWriteText + ' ' + welcomeText);
 
     </script>
@@ -72,8 +72,10 @@ UAT space logo, downloaded from https://synchronic.uat.edu/courses/5195/assignme
     <br>
     <br>
     <h2>CountDown Timer</h2>
-    
- <div id="CountDis"> display text here after start button pressed</div>
+
+    <div id="CountDis"> display text here after start button pressed</div>
+
+    <p id="newMessage">textmessage here</p> 
 
 
 
@@ -91,7 +93,14 @@ UAT space logo, downloaded from https://synchronic.uat.edu/courses/5195/assignme
         Stop
 
     </button>
-
+    <br>
+    <br>
+    <br>
+    <div id="dieres1">result 1</div>
+    <div id="dieres2">result 2</div>
+    <div id="gameresult">game result</div>
+    <br>
+    <button element onclick="playCraps()">Play Craps</button>
 
 
 </body>
