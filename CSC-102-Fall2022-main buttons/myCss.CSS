@@ -1,0 +1,94 @@
+/*screaming snake case = MY_VARIABLE*/
+
+#body{
+
+background-color: rgb(196, 196, 196);
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+table, th, td {
+      border: 1px solid black;
+    }
+
+
+
+#launchPage{
+
+
+
+      background-color: beige;
+
+
+}
+
+
+#loginPage{
+
+      background-color: beige;
+
+
+
+
+
+
+}
+
+
+
+#loginForm{
+
+      
+      text-align: center;
+      
+      
+}
+
+
+#newMessage{
+
+      color: purple;
+      font-size: 34px;
+      text-align-last: center;
+
+}
+
+
+
+
+#blink{
+
+    
+      font-size: 30px;
+      font-weight: bold;
+      font-family: sans-serif;
+      color: #1c87c9;
+      transition: 0.4s;
+    
+    
+
+
+
+
+
+}
+
+#CountDis{
+
+
+      font-size: 50px;
+      color: red;
+
+
+
+}
