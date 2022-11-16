@@ -1,6 +1,29 @@
+var soundstate = false;
 
 
 
+function playsta(){//function that plays sound
+
+var sound = document.getElementById("sound");//gets reference to audio file already loaded into webpage
+
+  sound.play();//plays the sound from element containing audio
+}
+
+
+
+
+
+
+
+
+function startStop(){
+
+  document.getElementById("stopBt").disabled = true;
+  document.getElementById("startBt").disabled = false;
+  
+
+
+}
 
 
 
@@ -43,12 +66,12 @@ async function loginValidation() {
 
 async function countdown50() {
 
-
+    
 
 
   // below is a way more efficient way of doing this.
-
-
+  
+  
 
   console.log('start timer'); //lets me know the timer started
   var count = 50; // sets a int var to 50
@@ -84,6 +107,8 @@ async function countdown50() {
 
 function CountDownTimer() {
   // count down timer 50 to 0 by 5
+  document.getElementById("stopBt").disabled = false;
+  document.getElementById("startBt").disabled = true;
   console.log("countdown started");
   //var count = 50;
   countdown50();
