@@ -16,6 +16,23 @@ background-color: rgb(196, 196, 196);
 
 }
 
+
+table, th, td {
+      border: 1px solid black;
+    }
+
+
+
+#launchPage{
+
+
+
+      background-color: beige;
+
+
+}
+
+
 #loginPage{
 
       background-color: beige;
