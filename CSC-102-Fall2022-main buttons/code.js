@@ -1,3 +1,24 @@
+var soundstate = false;
+
+
+
+function playsta(){//function that plays sound
+
+var sound = document.getElementById("sound");//gets reference to audio file already loaded into webpage
+
+  sound.play();
+  //plays the sound from element containing audio
+  document.getElementById("data").innerHTML = "reading data";
+  
+  
+
+}
+
+
+
+
+
+
 
 
 function startStop(){
@@ -98,8 +119,10 @@ function CountDownTimer() {
   countdown50();
   //count - 1;
   //document.getElementById("CountDis").innerHTML = count;
-
-
+  document.getElementById("data").innerText = "Reading Data";
+  updateDisplay();
+  index = 0;
+  timer = setInterval(updateDisplay,time_interval);
 }
 
 

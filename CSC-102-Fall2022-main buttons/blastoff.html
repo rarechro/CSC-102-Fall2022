@@ -22,6 +22,8 @@ Assignment: Launching a UAT Space program.
         Payton Jankowics
     </title>
     <script src="code.js"></script>
+    <script src="dataLoader.js"></script>
+    <script src="datapagewriter.js"></script>
 </head>
 
 <body id="launchPage">
@@ -44,119 +46,99 @@ UAT space logo, downloaded from https://synchronic.uat.edu/courses/5195/assignme
 
 
     <img src="UATspaceLogo-1.jpg">
+<script>var theTime = new Date();
+var time_interval = 5000;
+var running = true;
+var index = 0;
+var timer;
+var data = getData();
+</script>
 
 
-
-    <table width="70%">
-        <tr>
-          <th>DataType</th>
-          <th>Reading</th>
+    <table  width="70%" id="dataTable">
+        <tr id="data">
+          
           
         </tr>
-        <tr>
-          <td>Time Elapsed</td>
-          <td>15 seconds</td>
+        <tr id="timeelapsed">
+          
           
         </tr>
-        <tr>
-          <td>Latitude</td>
-          <td>0</td>
+        <tr id="latitude">
+          
           
         </tr>
-        <tr>
-            <td>Longitude</td>
-            <td>0</td>
+        <tr id="longitude">
             
           </tr>
-          <tr>
-            <td>GPS Altitude</td>
-            <td>0</td>
+          <tr id="gpsalt">
             
           </tr>
-          <tr>
-            <td>BMP Sensor Altitude</td>
-            <td>30383.04</td>
+          <tr id="BMPsAlt">
+            
             
           </tr>
-          <tr>
-            <td>BMP Sensor Pressure</td>
-            <td>2.34</td>
+          <tr id="BMPsPres">
+            
             
           </tr>
-          <tr>
-            <td>BMP Sensor Temperature</td>
-            <td>25</td>
+          <tr id="BMPsTemp">
+            
             
           </tr>
-          <tr>
-            <td>Digital Sensor Temperature</td>
-            <td>24.12</td>
+          <tr id="DigsTemp">
+            
             
           </tr>
-          <tr>
-            <td>CSS Sensor eC02</td>
-            <td>400</td>
+          <tr id="CSSsec02">
+            
             
           </tr>
-          <tr>
-            <td>CSS Sensor TVOC</td>
-            <td>0</td>
+          <tr id="CSSsTVOC">
+            
             
           </tr>
-          <tr>
-            <td>UV:</td>
-            <td>0</td>
+          <tr id="UV">
+            
             
           </tr>
-          <tr>
-            <td>Accel X:</td>
-            <td>-0.87</td>
+          <tr id="AccelX">
+            
             
           </tr>
-          <tr>
-            <td>Accel Y:</td>
-            <td>-.02</td>
+          <tr id="AccelY">
             
           </tr>
-          <tr>
-            <td>Accel Z:</td>
-            <td>9.61</td>
+          <tr id="AccelZ">
+            
             
           </tr>
-          <tr>
-            <td>Magnetic X:</td>
-            <td>.13</td>
+          <tr id="MAGX">
             
           </tr>
-          <tr>
-            <td>Magnetic Y:</td>
-            <td>.57</td>
+          <tr id="MAGY">
+            
             
           </tr>
-          <tr>
-            <td>Magnetic Z:</td>
-            <td>-.24</td>
+          <tr id="MAGZ">
+            
             
           </tr>
-          <tr>
-            <td>Gyro X:</td>
-            <td>4.66</td>
+          <tr id="GYROX">
             
           </tr>
-          <tr>
-            <td>Gyro Y:</td>
-            <td>.01</td>
+          <tr id="GYROY">
             
           </tr>
-          <tr>
-            <td>Gyro Z:</td>
-            <td>-.4</td>
+          <tr id="GYROZ">
+            
             
           </tr>
 
           
       </table>
 
+<br>
 
 
     <h1 id="blink">
@@ -185,8 +167,8 @@ UAT space logo, downloaded from https://synchronic.uat.edu/courses/5195/assignme
 
     <p id="newMessage">textmessage here</p> 
 
-
-
+    <button onclick="playsta();">Play Sound</button> 
+      <audio id="sound" src="us-lab-background.mp3"></audio>
 
     <br>
     <br>
