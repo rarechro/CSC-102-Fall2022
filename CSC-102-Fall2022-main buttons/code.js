@@ -119,7 +119,7 @@ function CountDownTimer() {
   countdown50();
   //count - 1;
   //document.getElementById("CountDis").innerHTML = count;
-  document.getElementById("data").innerText = "Reading Data";
+  document.getElementById("data").innerText = "Reading Data....";
   updateDisplay();
   index = 0;
   timer = setInterval(updateDisplay,time_interval);

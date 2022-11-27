@@ -16,9 +16,24 @@ background-color: rgb(196, 196, 196);
 
 }
 
+.data{
+      font-size: 40px;
+      text-decoration:solid;
+}
+
+
+.table{
+
+      align-items: center;
+}
+
 
 table, th, td {
       border: 1px solid black;
+      text-align: center;
+      background-color:darkgray;
+      color:maroon;
+      font-weight: bold;
     }
 
 
@@ -74,7 +89,7 @@ table, th, td {
       font-family: sans-serif;
       color: #1c87c9;
       transition: 0.4s;
-    
+      text-align: center;
     
 
 
